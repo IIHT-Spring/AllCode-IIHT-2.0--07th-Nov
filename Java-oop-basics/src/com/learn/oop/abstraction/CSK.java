@@ -3,7 +3,7 @@ package com.learn.oop.abstraction;
 
 public class CSK extends IPL {
 
-	@Override
+	
 	void play() {
 		System.out.println("CSK is playing good in 2021 season");
 	}

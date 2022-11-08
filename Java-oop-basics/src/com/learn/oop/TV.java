@@ -9,6 +9,15 @@ public class TV { // this is my class
 	String color;
 	String DisplayType;
 	
+	void insertData(String B, String Mn, Integer ss, Integer p, String c, String dt) {
+		Brand = B;
+		ModelName = Mn;
+		screenSize = ss;
+		price = p;
+		color = c;
+		DisplayType = dt;
+	}
+	
 	// defining the main method 
 	public static void main(String[] args) {
 		
@@ -22,7 +31,8 @@ public class TV { // this is my class
 		lgOled.color = "black";
 		lgOled.DisplayType = "OLED";
 		
-		System.out.println(lgOled.Brand + " " + lgOled.ModelName);
+		SamsungFrame.insertData("Samsung", "65' Frame TV", 65, 120000, "Beige", "LED");
+		System.out.println(SamsungFrame.Brand + " " + SamsungFrame.ModelName);
 		
 		
 		}

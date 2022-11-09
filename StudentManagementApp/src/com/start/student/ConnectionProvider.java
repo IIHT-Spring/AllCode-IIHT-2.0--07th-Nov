@@ -10,7 +10,7 @@ public class ConnectionProvider {
 	public static Connection createC() {
 		try {
 			// to load the drivers
-			Class.forName("com.mysql.jdbc.driver");
+			//Class.forName("com.mysql.jdbc.Driver");
 
 			// create the connection
 			String user = "root";

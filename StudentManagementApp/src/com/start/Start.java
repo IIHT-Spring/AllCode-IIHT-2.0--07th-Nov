@@ -33,7 +33,15 @@ public class Start {
 				Student st = new  Student(name,phone,city);
 				
 				System.out.println(st);
-				StudentDao.addStudentToDB(st);
+				
+				 boolean answer = StudentDao.addStudentToDB(st);
+				 if(answer) {
+					 System.out.println("Student added sucessfully");
+					 
+				 } else {
+					 System.out.println("there is some problem please contact the admin.");
+					 
+				 }
 				
 				
 			} else if (choice == 2) {
